@@ -5,3 +5,12 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
+.p-breeds .c-breed  .card {
+    height: 100%;
+}
+
+.p-breeds .c-breed .card > img{
+    height: 250px;
+    object-fit: cover;
+}
