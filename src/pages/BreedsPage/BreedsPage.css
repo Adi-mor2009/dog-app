@@ -6,6 +6,10 @@
     justify-content: space-evenly;
 }
 
+.p-breeds {
+    background-color: aliceblue;
+}
+
 .p-breeds .c-breed  .card {
     height: 100%;
 }
@@ -13,4 +17,12 @@
 .p-breeds .c-breed .card > img{
     height: 250px;
     object-fit: cover;
+}
+
+.p-breeds .c-breed .card .card-body {
+    background-color: blanchedalmond;
+}
+
+.p-breeds .c-breed .card .card-body .card-title {
+    text-align: center;
 }
