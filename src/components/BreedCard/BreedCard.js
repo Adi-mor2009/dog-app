@@ -6,6 +6,7 @@ function BreedCard({breed}){
         <div className="c-breed">
             <Card style={{ width: '14rem' }}>
                 <Card.Img variant="top" src={breed.img} />
+                {/* <Card.Link href={} target="_blank"><Card.Img variant="top" src={breed.img} /></Card.Link> */}
                 <Card.Body>
                     <Card.Title>{breed.name}</Card.Title>
                 </Card.Body>

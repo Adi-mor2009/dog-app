@@ -7,11 +7,14 @@
 }
 
 .p-breeds {
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
+    background-color: white;
 }
 
 .p-breeds .c-breed  .card {
     height: 100%;
+    border-color: black;
+    border-width: 5px;
 }
 
 .p-breeds .c-breed .card > img{
@@ -20,9 +23,22 @@
 }
 
 .p-breeds .c-breed .card .card-body {
-    background-color: blanchedalmond;
+    /* background-color: blanchedalmond; */
+    background-image: linear-gradient(rgb(23, 24, 24), rgb(194, 194, 196));
+    color: white;
 }
 
 .p-breeds .c-breed .card .card-body .card-title {
     text-align: center;
+}
+
+.p-breeds .c-filter .dropdown> a {
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    font-family: 'Oswald', sans-serif;
+}
+
+.p-breeds .c-filter .dropdown> a :hover{
+    text-decoration: none;
 }
