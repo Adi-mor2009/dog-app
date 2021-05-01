@@ -3,6 +3,7 @@ import './App.css';
 import BreedsPage from './pages/BreedsPage/BreedsPage';
 import Header from './components/Header/Header';
 import { HashRouter, Route, Switch } from 'react-router-dom';
+import BreedPage from './pages/BreedPage/BreedPage';
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
           <Route exact path="/" >
             <BreedsPage/>
           </Route>
-          <Route exact path="/breed">
-            <></>
+          <Route exact path="/Breeds"><BreedsPage/></Route>
+          <Route exact path="/breeds/:breed">
+            <BreedPage/>
           </Route>
         </Switch>
       </HashRouter>

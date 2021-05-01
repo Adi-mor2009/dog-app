@@ -20,6 +20,7 @@
 .p-breeds .c-breed .card > img{
     height: 250px;
     object-fit: cover;
+    cursor: pointer;
 }
 
 .p-breeds .c-breed .card .card-body {
