@@ -10,10 +10,10 @@ import './BreedsPage.css';
 function BreedsPage() {
     const [breeds, setBreeds] = useState([new BreedsModel(-1, "All", "")]);
     const [breedSelected, setBreedSelected] = useState(-1);
-    const [breedSelectedShow, setBreedSelectedShow] = useState();
+    
     const BreedCards = breedSelected != -1 ?
-        (breeds.filter((breed) => breedSelected == breed.id).map((breed) => <BreedCard key={(breed.id).toString()} breed={breed} loadOnPress={loadOnPress}></BreedCard>)) :
-        breeds.map((breed) => breed.id != -1 ? <BreedCard key={(breed.id).toString()} breed={breed} loadOnPress={loadOnPress}></BreedCard> : <></>);
+        (breeds.filter((breed) => breedSelected == breed.id).map((breed) => <BreedCard key={(breed.id).toString()} breed={breed}></BreedCard>)) :
+        breeds.map((breed) => breed.id != -1 ? <BreedCard key={(breed.id).toString()} breed={breed}></BreedCard> : <></>);
 
 
     useEffect(() => {
@@ -32,16 +32,6 @@ function BreedsPage() {
 
     function handleBreedSelect(breedId) {
         setBreedSelected(breedId);
-    }
-
-    function loadOnPress(breedId, breedName) {
-        console.log(breedName);
-        // const getBreedURL = "https://dog.ceo/api/breed/" + breedName + "/images";
-        // axios.get(getBreedURL).then(response => {
-        //     let imgs = response.data.message;
-        //     setBreedSelectedShow(breeds => [...breeds, new BreedsModel(index, breed, img)]);
-        // });
-        
     }
 
     return (

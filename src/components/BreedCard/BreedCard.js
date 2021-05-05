@@ -3,7 +3,7 @@ import { Card } from "react-bootstrap";
 import { Redirect, useHistory } from "react-router";
 import './BreedCard.css';
 
-function BreedCard({breed, loadOnPress}){
+function BreedCard({breed}){
     const [redirectTo, setRedirectTo] = useState("");
     const history = useHistory();
     if (redirectTo) {
@@ -16,7 +16,6 @@ function BreedCard({breed, loadOnPress}){
                         history.push('/breeds/' + breed.name);
                         setRedirectTo('/breeds/' + breed.name);
                     }}/>
-                    {/* <Card.Link href={loadOnPress(breed)} target="_blank"><Card.Img variant="top" src={breed.img} /></Card.Link> */}
                     <Card.Body>
                         <Card.Title>{breed.name}</Card.Title>
                     </Card.Body>
